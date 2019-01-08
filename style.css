@@ -1,0 +1,85 @@
+*	{
+	margin:	0;
+	padding:0;
+	background-color: #F9F9F9;
+}
+
+.img	{
+		border-radius:	8px
+}
+
+.grid	{
+	display:	grid;
+	grid-template-columns:	100px 1fr 1fr 1fr 100px;
+	grid-template-rows:	65px 75 1fr 1fr 250px;
+	grid-template-areas:
+		"title title title title title"
+		". header header header ."
+		". content content sidebar ."
+		". content content sidebar ."
+		". footer footer footer ."
+		;
+	grid-gap: 5px;
+	auto-fit: active;
+}
+
+.title	{
+	grid-area:	title;
+	font-size: 	50px;
+	font-family:georgia,garamond,serif;
+	font-style:bold;
+	background-color: #FFECCA;
+	align-content: left;
+}
+
+.header	{
+	grid-area:	header;
+	justify-content:space-around;
+	background-color:#DDDDDD;
+}
+
+.sidebar	{
+	grid-area:	sidebar;
+	font-size:	25px	;
+}
+
+.content	{
+	grid-area:	content;
+	font-size:	40px;
+}
+
+.chunk	{
+	display:grid;
+	grid-template-columns:	250px 250px 250px 250px;
+	justify-content: left;
+	grid-column-gap: 50px;
+}
+
+.footer	{
+	grid-area:	footer;
+	font-size:	30px;
+}
+
+.grid div:nth-child(even)	{
+	background-color:	#dee2e8;	
+}
+
+.grid div:nth-child(odd)	{
+	background-color:	#fff7e0;
+}
+
+.topnav	{
+	overflow:		hidden;
+	background-color:	#DDDDDD;
+	float:			inherit;
+	font-size:		20px;
+}
+
+.topnav a{
+	float:		left;
+	display:	block;
+	color:		#605738;
+	text-align:	center;
+	padding:	14px 16px;
+	text-decoration:none;
+}
